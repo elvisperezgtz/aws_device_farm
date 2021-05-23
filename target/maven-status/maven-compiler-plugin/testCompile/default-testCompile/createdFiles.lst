@@ -1,0 +1,6 @@
+pages\WaitConfig.class
+pages\BasePage.class
+pages\NavigationPage.class
+tests\LoginTest.class
+tests\TestBase.class
+pages\LoginPage.class
