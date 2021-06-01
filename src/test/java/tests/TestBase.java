@@ -47,6 +47,14 @@ public abstract class TestBase {
 
         //Use a empty DesiredCapabilities object
         DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("automationName", "uiautomator2");
+//        capabilities.setCapability("platformName", "Android");
+//        capabilities.setCapability("platformVersion", "10");
+//        capabilities.setCapability("deviceName", "emulator-5554");
+  //      capabilities.setCapability("appPackage", "com.mobiquityinc.mitigo");
+//        capabilities.setCapability("app", "C:\\indra backup\\REPO\\tigo_colombia\\mobile\\oneapp\\src\\test\\resources\\app\\app-debug_UAT_5.1.0 (709).apk");
+      //  capabilities.setCapability("appActivity", "com.swaglabsmobileapp.SplashActivity");
+//        capabilities.setCapability("noReset", false);
 
         driver = new AndroidDriver<MobileElement>(url, capabilities);
 

@@ -37,7 +37,8 @@ public class LoginTest extends TestBase{
     @Test
     public void loginSuccess() throws InterruptedException {
         Assert.assertTrue(loginPage.login(CORRECT_USER_NAME, CORRECT_PASSWORD), BAD_TEXT_ENTRY_MSG);
-        Assert.assertEquals(loginPage.getTitleServices(), true);
+        loginPage.navigationMenuServices();
+//        Assert.assertEquals(loginPage.getTitleServices(), true);
     }
 
     /**
@@ -49,12 +50,4 @@ public class LoginTest extends TestBase{
 //        Assert.assertEquals(loginPage.getMessage(), LOGIN_FAIL_MESSAGE);
 //    }
 
-    /**
-     * After each test method, logout or try again
-     */
-//    @AfterMethod
-//    public void logOut() {
-//        loginPage.pressAltButton();
-//        Assert.assertTrue(loginPage.checkIfBackAtLogin());
-//    }
 }
